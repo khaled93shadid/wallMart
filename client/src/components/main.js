@@ -1,16 +1,21 @@
 import '../styles/main.css'
 import Navbar from './navbar'
+import CustomSlider from'./slider/custom.slider.js'
+import CustomSlider2 from'./slider/custom.slider2.js'
+import images2 from './slider/images2.js'
+import images3 from './slider/images3.js'
+
 
 export default function Main(){
 
 return(
 <>
 <Navbar />
-<div className='main_body_div'>{/*body start */}
+<div className='main_body_div'>{/*ALL_body start */}
       <div className='body_div1_container'>{/*CONTAINER div1 START */}
         <div className='body_div1'>{/*DIV1 START */}
               <div className='body_div1_1'>{/*start */}
-                    <img className='body_div1_1_img' src='https://i5.walmartimages.com/dfw/4ff9c6c9-462c/k2-_d78507e5-bb63-49d3-83b0-08c12886986e.v1.jpg?odnHeight=256&odnWidth=385&odnBg=&odnDynImageQuality=70'/>
+                    <img className='body_div1_1_img' src='https://i5.walmartimages.com/dfw/4ff9c6c9-462c/k2-_d78507e5-bb63-49d3-83b0-08c12886986e.v1.jpg?odnHeight=256&odnWidth=385&odnBg=&odnDynImageQuality=70' />
                     <p className='body_div1_1_p'>College tech </p>  
                     <p className='body_div1_1_p2'>starting at $19.88</p>  
                   <a href=''> <p className='body_div1_1_p3'>shop tech</p> </a> 
@@ -90,9 +95,119 @@ return(
               </div>
         </div>{/*DIV3 END */}
               
-      </div>{/*CONTAINER div1 END */}
+      </div> {/*CONTAINER div1 END */}
 
-</div>{/*body End */}
+
+
+
+
+       <div className='body_row2_container'>{/*CONTAINER div2 START */}
+              <div className='body_row2_1'>{/*START */}
+                     <img className='body_row2_1_img' src='https://i5.walmartimages.com/dfw/4ff9c6c9-b547/k2-_f0b93506-025c-4744-86d4-542140da5bd7.v1.jpg?odnHeight=447&odnWidth=794&odnBg=&odnDynImageQuality=70' alt='pic' />
+                     <p className='body_row2_1_p1'>Get free delivery with Walmart+</p>
+                     <p className='body_row2_1_p2'>Be ready for back to</p>
+                     <p className='body_row2_1_p3'>school</p>
+                     <p className='body_row2_1_p4'>shop now</p>
+
+              </div>{/*END*/}
+
+
+              <div className='body_row2_2'>{/*START */}
+                     <div className='body_row2_2_column_p'>
+                        <p className='body_row2_2_P1'>All they need to succeed</p>
+                      <a href='/'>  <p className='body_row2_2_P11'>view all</p> </a>
+                     </div>
+                      
+                      <p className='body_row2_2_P2'>Make learning as easy as ABC</p>
+                       <div className="App2">  {/* slider start */}
+                           <CustomSlider2>
+        {images2.map((image, index) => {
+          return(
+            
+            <div>
+              
+              <img key={index} src={image.imgURL} alt={image.imgAlt} />
+             
+              <div className='slider_margin_div'>{/*margin div */}
+                {image.id===1 &&  <p className='slider_p1'>Now ${image.price}<span className='slider_span'><del>${image.oldPrice}</del></span></p>}
+                {image.id===2 &&  <p className='slider_p11'> ${image.price}</p>}
+              
+              <p className='slider_p2'>{image.dis}</p>
+               {image.id===1 &&  <button className='slider_button'>+Add</button>}
+               {image.id===2 &&  <button className='slider_button'>options</button>}
+        
+              </div>{/*margin div */}
+            </div>
+          )
+          
+        })}
+                          </CustomSlider2>
+     
+                        </div>{/* slider end */}
+
+              </div>{/*END*/}
+
+       </div>  {/*CONTAINER div2 END */}
+
+     
+
+      <div className='body_row2_container'>{/*CONTAINER div2 START */}
+             
+
+              <div className='body_row2_2'>{/*START */}
+                     <div className='body_row2_2_column_p'>
+                        <p className='body_row2_2_P1'>All they need to succeed</p>
+                      <a href='/'>  <p className='body_row2_2_P11'>view all</p> </a>
+                     </div>
+                      
+                      <p className='body_row2_2_P2'>Make learning as easy as ABC</p>
+                       <div className="App2">  {/* slider start */}
+                           <CustomSlider2>
+        {images3.map((image, index) => {
+          return(
+            
+            <div>
+              
+              <img key={index} src={image.imgURL} alt={image.imgAlt} />
+             
+              <div className='slider_margin_div'>{/*margin div */}
+                {image.id===1 &&  <p className='slider_p111'>Now ${image.price}<span className='slider_span1'>${image.oldPrice}</span></p>}
+                {image.id===2 &&  <p className='slider_p111'> ${image.price}</p>}
+                {image.id===3 &&  <p className='slider_p111'> ${image.price}</p>}
+               {image.id===3 &&  <p className='slider_p22'>{image.dis2}</p>}
+               {image.id===1 &&  <br />}
+               {image.id===2 &&  <br />}
+              <p className='slider_p2'>{image.dis}</p>
+             
+               {image.id===1 &&  <button className='slider_button'>+Add</button>}
+               {image.id===3 &&  <button className='slider_button'>+Add</button>}
+               {image.id===2 &&  <button className='slider_button'>options</button>}
+        
+              </div>{/*margin div */}
+            </div>
+          )
+          
+        })}
+                          </CustomSlider2>
+     
+                        </div>{/* slider end */}
+
+              </div>{/*END*/}
+
+               <div className='body_row2_1'>{/*START */}
+                     <img className='body_row2_1_img' src='https://i5.walmartimages.com/dfw/4ff9c6c9-7e96/k2-_24035854-b8de-415d-8478-5f481e751d27.v1.jpg?odnHeight=447&odnWidth=794&odnBg=&odnDynImageQuality=70' alt='pic' />
+                     <p className='body_row2_1_p1'>In a fast as an hour*</p>
+                     <p className='body_row2_1_p2'>Get road trip-</p>
+                     <p className='body_row2_1_p3'>ready!</p>
+                     <p className='body_row2_1_p4'>shop now</p>
+
+              </div>{/*END*/}
+
+
+       </div>  {/*CONTAINER div2 END */}
+
+
+</div>{/*ALL_body End */}
 
 </>
 )
