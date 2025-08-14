@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 
-import "./custom.slider.css";
+import "./custom.slider3.css";
 
 function CustomCarousel1({ children}) {
   const [activeIndex1, setActiveIndex1] = useState(0);
@@ -54,14 +54,14 @@ function CustomCarousel1({ children}) {
 
   return (
     <div
-      className="container__slider3"
+      className="container__slider11"
       onMouseEnter={AutoPlayStop}
       onMouseLeave={AutoPlayStart}
     >
       {children.map((item, index) => {
         return (
           <div
-            className={"slider3__item slider3__item-active-" + (activeIndex1 + 1)}
+            className={"slider11__item slider11__item-active-" + (activeIndex1 + 1)}
             key={index}
           >
             {item}
@@ -69,15 +69,15 @@ function CustomCarousel1({ children}) {
         );
       })}
 
-      <div className="container__slider3__links">
+      <div className="container__slider11__links">
         {children.map((item, index) => {
           return (
             <button
               key={index}
               className={
                 activeIndex1 === index
-                  ? "container__slider3__links-small container__slider3__links-small-active"
-                  : "container__slider3__links-small"
+                  ? "container__slider11__links-small container__slider11__links-small-active"
+                  : "container__slider11__links-small"
               }
               onClick={(e) => {
                 e.preventDefault();
@@ -89,7 +89,7 @@ function CustomCarousel1({ children}) {
       </div>
 
       <button
-        className="slider3__btn-next"
+        className="slider11__btn-next"
         onClick={(e) => {
           e.preventDefault();
           slideNext();
@@ -98,7 +98,7 @@ function CustomCarousel1({ children}) {
         {">"}
       </button>
       <button
-        className="slider3__btn-prev"
+        className="slider11__btn-prev"
         onClick={(e) => {
           e.preventDefault();
           slidePrev();

@@ -1,14 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 .App {
+    font-family: Arial, Helvetica, sans-serif;
+  width: 100%;
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  flex-direction: column;
+}
+.App2 {
   font-family: Arial, Helvetica, sans-serif;
   width: 100%;
-
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
 }
-.App2 {
+.App3 {
   font-family: Arial, Helvetica, sans-serif;
   width: 100%;
   display: flex;
@@ -200,8 +207,34 @@ padding-left: 15px;padding-right: 15px;
 }
 .slider_button:hover{border: solid black 2px;}
 
+.relative_for_slider_row2{position: relative;padding-top:70px;background-color: white;
+margin-top: 0px;width: 97.5%;margin-left: 20px;
+}
+.relative_for_slider_p{color:rgb(15, 17, 17);position: absolute;
+top:20px;left:20px;font-family: Roboto;
+font-size: 19px;font-weight: 700;}
+.relative_for_slider_p5{color:rgb(15, 17, 17);position: absolute;
+top:20px;left:20px;font-family: Roboto;
+font-size: 22px;font-weight: 700;}
+.relative_for_slider_p2{color:rgb(116, 118, 124);position: absolute;
+top:60px;left:20px;font-family: Roboto;
+font-size: 14px;}
+.relative_for_slider_p3{color:rgb(15, 17, 17);position: absolute;
+top:20px;right:20px;font-family: Roboto;
+font-size: 13px;text-decoration: underline;}
 
+.relative_for_sliderp2{font-family: Roboto;font-size: 13px;text-align: center;}
 
+.slider_new1_p1{color: rgb(42, 135, 3); font-size: 18px;font-family: Roboto;font-weight: 700;}
+.slider_new1_span1{margin-left: 5px;color: rgb(116, 118, 124); font-size: 12px;font-family: Roboto;}
+.slider_new1_p2{color:black; font-size: 12px;font-family: Roboto;width:180px;}
+.slider_new1_p3{color:rgb(70, 71, 74); font-size: 15px;font-family: Roboto;width:200px;
+height:70px;width:180px;}
+.slider_new1_img{width:180px ;height: 180px;margin-top: 0px;}
 
+.slider_new1_flex{position: relative;cursor: pointer;}
+.heart_icon1{background-color: white;padding: 5px;border-radius: 25px;position: absolute;
+top:5px;right: 20px;
+}
 
 

@@ -1,4 +1,4 @@
-.container__slider3 {
+.container__slider11 {
 position: relative;  
   width: 100%;
   
@@ -8,11 +8,11 @@ position: relative;
   align-items: center;
   flex-direction: row;
   flex-wrap: nowrap;
-  background-color: white;
-  margin-top: 60px;
+  background-color:  white;
+  margin-top:0px;
 }
 
-.container__slider3 > button {
+.container__slider11 > button {
   background-color: white;
 
   outline: none;
@@ -26,28 +26,28 @@ position: relative;
   font-size: 24px;
 }
 
-.container__slider3 > button:active {
+.container__slider11 > button:active {
   color: black;
 }
 
-.slider3__btn-next {
+.slider11__btn-next {
   position: absolute;
-  right: -30px;
+  right: -5px;
 }
 
-.slider3__btn-prev {
+.slider11__btn-prev {
   position: absolute;
   left: -25px;
 }
 
-.container__slider3__links {
-  position: absolute;
+.container__slider11__links {
+  position:absolute;
   bottom: 5%;
   left: 50%;
   transform: translateX(-50%);
 }
 
-.container__slider3__links-small {
+.container__slider11__links-small {
   position: relative;
   width: 8px;
   height: 8px;
@@ -61,51 +61,52 @@ position: relative;
   margin: 0 2px;
 }
 
-.container__slider3__links-small-active {
+.container__slider11__links-small-active {
   background-color: black;
 }
 
-.slider3__item{
+.slider11__item{
   box-sizing: border-box;
-  width: 300px;
+  width: 100px;
   height: auto;
   overflow: hidden;
   object-fit: cover;
+  margin-right: 50px;
   transform: translateX(0);
   transition: transform 1s ease;
 }
 
-.slider3__item-active-1 {
+.slider11__item-active-1 {
   transform: translateX(0px);
 }
 
-.slider3__item-active-2 {
+.slider11__item-active-2 {
   transform: translateX(0px);
 }
 
-.slider3__item-active-3 {
+.slider11__item-active-3 {
   transform: translateX(0px);
 }
 
-.slider3__item-active-4 {
+.slider11__item-active-4 {
   transform: translateX(0px);
 }
 
-.slider3__item-active-5 {
+.slider11__item-active-5 {
   transform: translateX(0px);
 }
 
-.slider3__item-active-6 {
+.slider11__item-active-6 {
   transform: translateX(0px);
 }
 
-.slider3__item-active-7 {
+.slider11__item-active-7 {
   transform: translateX(0px);
 }
 
-.slider3__item img {
-  width: 180px;
-  height: 180px;
+.slider11__item img {
+  width: 100px;
+  height: 100px;
 }
 
 

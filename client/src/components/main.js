@@ -1,9 +1,12 @@
 import '../styles/main.css'
 import Navbar from './navbar'
 import CustomSlider from'./slider/custom.slider.js'
+import CustomSlider3 from'./slider/custom.slider3.js'
 import CustomSlider2 from'./slider/custom.slider2.js'
+import images from './slider/images.js'
 import images2 from './slider/images2.js'
 import images3 from './slider/images3.js'
+import images4 from './slider/images4.js'
 
 
 export default function Main(){
@@ -166,7 +169,7 @@ return(
         {images3.map((image, index) => {
           return(
             
-            <div>
+            <div >
               
               <img key={index} src={image.imgURL} alt={image.imgAlt} />
              
@@ -207,6 +210,100 @@ return(
        </div>  {/*CONTAINER div2 END */}
 
 
+       <div className='relative_for_slider_row2'>{/* relativeSlider start */}
+            <div className="App3">  {/* slider start */}
+                  <CustomSlider3>
+                    {images4.map((image, index) => {
+                       return(
+                           <div key={index}>
+                               <img  src={image.imgURL} alt={image.imgAlt} />
+                               <p className='relative_for_sliderp2'> {image.name}</p>
+                             
+                          </div>
+
+                       )
+                      
+                     
+                    })}
+                  </CustomSlider3>
+            
+            </div>{/* slider end */}
+
+             <p className='relative_for_slider_p'>Get it all right here</p>
+             <a href='/'>  <p className='relative_for_slider_p3'>view all</p></a> 
+
+      </div>{/* relativeSlider end */}
+
+      
+        <div className='relative_for_slider_row2'>{/* relativeSlider start */}
+            <div className="App">  {/* slider start */}
+                  <CustomSlider>
+                    {images.map((image, index) => {
+                       return(
+                           <div key={index} className='slider_new1_flex'>
+                               <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="black" class="bi bi-heart heart_icon1" viewBox="0 -2 16 17">
+                                      <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15"/>
+                              </svg>
+
+                               <img className='slider_new1_img' src={image.imgURL} alt={image.imgAlt} />
+                               
+                                   <p className='slider_new1_p1'>Now ${image.price}<span className='slider_new1_span1'><del>${image.oldprice}</del></span></p>
+                                  
+                                   <p className='slider_new1_p3'>{image.dis}</p>
+                                   <button className='slider_button'>Options</button>
+
+                
+                             
+                          </div>
+
+                       )
+                      
+                     
+                    })}
+                  </CustomSlider>
+            
+            </div>{/* slider end */}
+
+             <p className='relative_for_slider_p5'>Flash Deals</p>
+             <p className='relative_for_slider_p2'>Up to 65% off</p>
+             <a href='/'>  <p className='relative_for_slider_p3'>view all</p></a> 
+             
+      </div>{/* relativeSlider end */}
+
+         <div className='relative_for_slider_row2'>{/* relativeSlider start */}
+            <div className="App">  {/* slider start */}
+                  <CustomSlider>
+                    {images.map((image, index) => {
+                       return(
+                           <div key={index} className='slider_new1_flex'>
+                               <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="black" class="bi bi-heart heart_icon1" viewBox="0 -2 16 17">
+                                      <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15"/>
+                              </svg>
+
+                               <img className='slider_new1_img' src={image.imgURL} alt={image.imgAlt} />
+                               
+                                   <p className='slider_new1_p1'>Now ${image.price}<span className='slider_new1_span1'><del>${image.oldprice}</del></span></p>
+                                  
+                                   <p className='slider_new1_p3'>{image.dis}</p>
+                                   <button className='slider_button'>Options</button>
+
+                
+                             
+                          </div>
+
+                       )
+                      
+                     
+                    })}
+                  </CustomSlider>
+            
+            </div>{/* slider end */}
+
+             <p className='relative_for_slider_p5'>Flash Deals</p>
+             <p className='relative_for_slider_p2'>Up to 65% off</p>
+             <a href='/'>  <p className='relative_for_slider_p3'>view all</p></a> 
+             
+      </div>{/* relativeSlider end */}
 </div>{/*ALL_body End */}
 
 </>
