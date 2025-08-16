@@ -7,6 +7,8 @@ import images from './slider/images.js'
 import images2 from './slider/images2.js'
 import images3 from './slider/images3.js'
 import images4 from './slider/images4.js'
+import images6 from './slider/images6.js'
+import images7 from './slider/images7.js'
 
 
 export default function Main(){
@@ -247,8 +249,7 @@ return(
 
                                <img className='slider_new1_img' src={image.imgURL} alt={image.imgAlt} />
                                
-                                   <p className='slider_new1_p1'>Now ${image.price}<span className='slider_new1_span1'><del>${image.oldprice}</del></span></p>
-                                  
+                                   <p className='slider_new1_p1'>Now ${image.price}<span className='slider_new1_span1'><del>${image.oldprice}</del></span></p> 
                                    <p className='slider_new1_p3'>{image.dis}</p>
                                    <button className='slider_button'>Options</button>
 
@@ -270,10 +271,10 @@ return(
              
       </div>{/* relativeSlider end */}
 
-         <div className='relative_for_slider_row2'>{/* relativeSlider start */}
+        <div className='relative_for_slider_row2'>{/* relativeSlider start (use this slider for repetion)*/}
             <div className="App">  {/* slider start */}
                   <CustomSlider>
-                    {images.map((image, index) => {
+                    {images6.map((image, index) => {
                        return(
                            <div key={index} className='slider_new1_flex'>
                                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="black" class="bi bi-heart heart_icon1" viewBox="0 -2 16 17">
@@ -283,7 +284,7 @@ return(
                                <img className='slider_new1_img' src={image.imgURL} alt={image.imgAlt} />
                                
                                    <p className='slider_new1_p1'>Now ${image.price}<span className='slider_new1_span1'><del>${image.oldprice}</del></span></p>
-                                  
+                                  <p className='slider_new1_dis2'>{image.dis2}</p>
                                    <p className='slider_new1_p3'>{image.dis}</p>
                                    <button className='slider_button'>Options</button>
 
@@ -299,11 +300,167 @@ return(
             
             </div>{/* slider end */}
 
-             <p className='relative_for_slider_p5'>Flash Deals</p>
-             <p className='relative_for_slider_p2'>Up to 65% off</p>
+             <p className='relative_for_slider_p5'>Jump right back in</p>
              <a href='/'>  <p className='relative_for_slider_p3'>view all</p></a> 
              
-      </div>{/* relativeSlider end */}
+        </div>{/* relativeSlider end */}
+
+        <div className='school_div_container'>{/* school div start */}
+                <div className='school1'>
+                    <img className='school1_img' src='https://i5.walmartimages.com/dfw/4ff9c6c9-2d38/k2-_79de46f3-da2c-4fbb-99bc-00f1fe9e7f6d.v1.jpg?odnHeight=658&odnWidth=658&odnBg=&odnDynImageQuality=70' alt=''/>
+                    <p className='school1_p'>Wonder Nation & more</p>
+                    <p className='school1_p2'>Back-to-school fashion</p>
+                    <p className='school1_p3'>Shop now</p>
+                  
+                </div>
+
+                <div className='school2'>
+                    <div className='school2_div1'>
+                       <img className='school2_div1_img' src='https://i5.walmartimages.com/dfw/4ff9c6c9-3971/k2-_4e4d3052-13bc-4fd6-a891-1519b953f129.v1.jpg?odnHeight=292&odnWidth=512&odnBg=&odnDynImageQuality=70' alt=''/>
+                       <p className='school2_div1_p1'>Tons of backpacks from $5</p>
+                       <p className='school2_div1_p2'>Shop now</p>
+                       
+                    </div>
+                       
+                    <div className='school2_div2'>
+                         <div className='school2_div2_1'>
+                             <img className='school2_div2_1_img1' alt='' src='https://i5.walmartimages.com/dfw/4ff9c6c9-928c/k2-_76119750-4441-4e8b-b075-c613f6433ca0.v1.jpg?odnHeight=342&odnWidth=248&odnBg=&odnDynImageQuality=70'/>
+                             <p className='school2_div2_1_p1'>Stylish uniforms from $4</p>
+                             <p className='school2_div2_1_p2'>Shop now</p>
+                         </div>
+                         <div className='school2_div2_1'>
+                             <img className='school2_div2_1_img1' alt='' src='https://i5.walmartimages.com/dfw/4ff9c6c9-a54a/k2-_0cea4f04-1c79-4eda-96e5-cf0421815a5f.v1.jpg?odnHeight=342&odnWidth=248&odnBg=&odnDynImageQuality=70'/>
+                             <p className='school2_div2_1_p1_cpy'>Fan-fave graphic tees</p>
+                             <p className='school2_div2_1_p2_cpy'>Shop now</p>
+                         </div>
+                        
+                        
+                      
+                    </div>   
+
+                </div>
+
+                <div className='school3'>
+                   <div className='school3_div1'>
+                      <img className='school3_div1_img' alt='' src='https://i5.walmartimages.com/dfw/4ff9c6c9-4adf/k2-_c8134d4b-fbb5-45ef-a95f-f0770c220d1e.v1.jpg?odnHeight=658&odnWidth=385&odnBg=&odnDynImageQuality=70'/>
+                      <p className='school3_div1_p1'>Looks for campus & beyond from $10</p>
+                     
+
+                   </div>
+
+                </div>
+        </div>{/* school div end */}
+        
+
+        <div className='relative_for_slider_row2'>{/* relativeSlider start (last1)*/}
+            <div className="App">  {/* slider start */}
+                  <CustomSlider>
+                    {images7.map((image, index) => {
+                       return(
+                           <div key={index} className='slider_new1_flex'>
+                               <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="black" class="bi bi-heart heart_icon1" viewBox="0 -2 16 17">
+                                      <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15"/>
+                              </svg>
+
+                               <img className='slider_new1_img' src={image.imgURL} alt={image.imgAlt} />
+                               
+                                   <p className='slider_new1_p1'>Now ${image.price}<span className='slider_new1_span1'><del>${image.oldprice}</del></span></p>
+                                  <p className='slider_new1_dis2'>{image.dis2}</p>
+                                   <p className='slider_new1_p3'>{image.dis}</p>
+                                   <button className='slider_button'>Options</button>
+
+                
+                             
+                          </div>
+
+                       )
+                      
+                     
+                    })}
+                  </CustomSlider>
+            
+            </div>{/* slider end */}
+
+             <p className='relative_for_slider_p5'>School fashion from $4</p>
+             <a href='/'>  <p className='relative_for_slider_p3'>view all</p></a> 
+             
+        </div>{/* relativeSlider end */}
+ 
+
+       
+        <div className='relative_for_slider_row2'>{/* relativeSlider start (last2)*/}
+            <div className="App">  {/* slider start */}
+                  <CustomSlider>
+                    {images6.map((image, index) => {
+                       return(
+                           <div key={index} className='slider_new1_flex'>
+                               <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="black" class="bi bi-heart heart_icon1" viewBox="0 -2 16 17">
+                                      <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15"/>
+                              </svg>
+
+                               <img className='slider_new1_img' src={image.imgURL} alt={image.imgAlt} />
+                               
+                                   <p className='slider_new1_p1'>Now ${image.price}<span className='slider_new1_span1'><del>${image.oldprice}</del></span></p>
+                                  <p className='slider_new1_dis2'>{image.dis2}</p>
+                                   <p className='slider_new1_p3'>{image.dis}</p>
+                                   <button className='slider_button'>Options</button>
+
+                
+                             
+                          </div>
+
+                       )
+                      
+                     
+                    })}
+                  </CustomSlider>
+            
+            </div>{/* slider end */}
+
+             <p className='relative_for_slider_p5'>Popular in home decor</p>
+             <a href='/'>  <p className='relative_for_slider_p3'>view all</p></a> 
+             
+        </div>{/* relativeSlider end */}
+
+
+
+         <div className='relative_for_slider_row2'>{/* relativeSlider start (last3)*/}
+            <div className="App">  {/* slider start */}
+                  <CustomSlider>
+                    {images6.map((image, index) => {
+                       return(
+                           <div key={index} className='slider_new1_flex'>
+                               <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="black" class="bi bi-heart heart_icon1" viewBox="0 -2 16 17">
+                                      <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15"/>
+                              </svg>
+
+                               <img className='slider_new1_img' src={image.imgURL} alt={image.imgAlt} />
+                               
+                                   <p className='slider_new1_p1'>Now ${image.price}<span className='slider_new1_span1'><del>${image.oldprice}</del></span></p>
+                                  <p className='slider_new1_dis2'>{image.dis2}</p>
+                                   <p className='slider_new1_p3'>{image.dis}</p>
+                                   <button className='slider_button'>Options</button>
+
+                
+                             
+                          </div>
+
+                       )
+                      
+                     
+                    })}
+                  </CustomSlider>
+            
+            </div>{/* slider end */}
+
+             <p className='relative_for_slider_p5'>Save on home decor</p>
+             <a href='/'>  <p className='relative_for_slider_p3'>view all</p></a> 
+             
+        </div>{/* relativeSlider end */}
+
+
+
+
 </div>{/*ALL_body End */}
 
 </>
