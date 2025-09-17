@@ -1,5 +1,5 @@
 import './main.css'
-import Navbar from './navbar'
+import Navbar from './navbar.js'
 import CustomSlider from'./custom.slider.js'
 import CustomSlider3 from'./custom.slider3.js'
 import CustomSlider2 from'./custom.slider2.js'
